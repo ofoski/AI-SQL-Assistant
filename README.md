@@ -1,4 +1,4 @@
-# 🎵 RAG-SQL Assistant (Chinook)
+# 🎵 AI SQL Assistant (Chinook)
 
 [![Python](https://img.shields.io/badge/python-blue.svg)](https://www.python.org/downloads/release/python-310/)
 ![Build](https://github.com/ofoski/RAG-SQL-assistant/actions/workflows/python-app.yml/badge.svg)
