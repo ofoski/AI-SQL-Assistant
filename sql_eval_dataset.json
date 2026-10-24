@@ -25,7 +25,6 @@
   "gold_sql": "SELECT Track.Name AS TrackName FROM Track ORDER BY Track.TrackId ASC LIMIT 10;"
   },
   {
-    {
   "difficulty": "medium",
   "prompt": "Top 5 albums by track count. Include AlbumTitle and TrackCount, ordered by TrackCount descending; if tied, by AlbumTitle ascending.",
   "gold_sql": "SELECT Album.Title AS AlbumTitle, COUNT(Track.TrackId) AS TrackCount FROM Album JOIN Track ON Track.AlbumId = Album.AlbumId GROUP BY Album.AlbumId, Album.Title ORDER BY TrackCount DESC, AlbumTitle ASC LIMIT 5;"
