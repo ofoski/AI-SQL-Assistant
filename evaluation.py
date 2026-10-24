@@ -53,9 +53,10 @@ def rouge_accuracy_scores():
     scorer = rouge_scorer.RougeScorer(['rougeL'], use_stemmer=True)
     rouge_scores = []
     accuracy = 0
+    predictions = get_prediction()
     for i in range(len(dataset)):
         gold_sql = dataset[i]["gold_sql"]
-        pred_sql = get_prediction()[i]
+        pred_sql = predictions[i]
         score = scorer.score(gold_sql.lower(), pred_sql.lower())
         rouge_l = score['rougeL'].fmeasure
         rouge_scores.append(rouge_l)
